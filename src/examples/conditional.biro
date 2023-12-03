@@ -1,0 +1,8 @@
+var barya = 15;
+
+Kon (barya > 10) {
+  Ihap_sa "Dako ang barya!";
+} Kun_dili {
+  Ihap_sa "Gamay lang ang barya.";
+}
+

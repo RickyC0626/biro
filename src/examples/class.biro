@@ -1,0 +1,28 @@
+Klase Mananap {
+  sulti() {}
+
+  lupad() {
+    Ihap_sa "Dili ko makalupad";
+  }
+}
+
+Klase Iro < Mananap {
+  sulti() {
+    Ihap_sa "woof";
+  }
+}
+
+Klase Iring < Mananap {
+  sulti() {
+    Ihap_sa "meow";
+  }
+}
+
+var iro = Iro();
+iro.sulti(); // woof
+iro.lupad();
+
+var iring = Iring();
+iring.sulti(); // meow
+iring.lupad();
+

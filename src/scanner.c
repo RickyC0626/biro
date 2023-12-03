@@ -109,6 +109,7 @@ static TokenType checkKeyword(int start, int length,
 }
 
 static TokenType identifierType() {
+  // Default English keywords
   switch (scanner.start[0]) {
     case 'a': return checkKeyword(1, 2, "nd", TOKEN_AND);
     case 'c': return checkKeyword(1, 4, "lass", TOKEN_CLASS);
@@ -138,6 +139,40 @@ static TokenType identifierType() {
       break;
     case 'v': return checkKeyword(1, 2, "ar", TOKEN_VAR);
     case 'w': return checkKeyword(1, 4, "hile", TOKEN_WHILE);
+  }
+
+  // Bisayan keywords
+  switch (scanner.start[0]) {
+    case 'B': 
+      if (scanner.current - scanner.start > 1) {
+        switch (scanner.start[1]) {
+          case 'a':
+            if (scanner.current - scanner.start > 2) {
+              switch (scanner.start[2]) {
+                case 'k': return checkKeyword(3, 3, "kak", TOKEN_FALSE);
+                case 'l': return checkKeyword(3, 2, "ik", TOKEN_RETURN);
+              }
+            }
+        }
+      }
+    case 'F': return checkKeyword(1, 7, "unksyon", TOKEN_FUN);
+    case 'I': return checkKeyword(1, 6, "hap_sa", TOKEN_PRINT);
+    case 'K':
+      if (scanner.current - scanner.start > 1) {
+        switch (scanner.start[1]) {
+          case 'i': return checkKeyword(2, 2, "ni", TOKEN_THIS);
+          case 'l': return checkKeyword(2, 3, "ase", TOKEN_CLASS);
+          case 'o': return checkKeyword(2, 1, "n", TOKEN_IF);
+          case 'u': return checkKeyword(2, 6, "n_dili", TOKEN_ELSE);
+        }
+      }  
+    case 'M': return checkKeyword(1, 10, "awadwad_sa", TOKEN_PRINT);
+    case 'O': return checkKeyword(1, 0, "", TOKEN_OR);
+    case 'P': return checkKeyword(1, 3, "ara", TOKEN_FOR);
+    case 'S': return checkKeyword(1, 6, "amtang", TOKEN_WHILE);
+    case 'T': return checkKeyword(1, 5, "inuod", TOKEN_TRUE);
+    case 'U': return checkKeyword(1, 1, "g", TOKEN_AND);
+    case 'W': return checkKeyword(1, 3, "ala", TOKEN_NIL);
   }
 
   return TOKEN_IDENTIFIER;

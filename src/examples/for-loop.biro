@@ -1,0 +1,4 @@
+Para (var i = 0; i < 5; i = i + 1) {
+  Ihap_sa "Kumusta ka, Bisaya?";
+}
+

@@ -1,0 +1,14 @@
+Funksyon kuhaAngKwarta(barya) {
+  Balik barya * 2;
+}
+
+var barya = 2;
+
+Para (var i = 0; i < 5; i = i + 1) {
+  Ihap_sa barya;
+  barya = kuhaAngKwarta(barya);
+}
+
+Ihap_sa "Katapusan ihap:";
+Ihap_sa barya;
+
