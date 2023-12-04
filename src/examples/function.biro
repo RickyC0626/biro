@@ -12,3 +12,12 @@ Para (var i = 0; i < 5; i = i + 1) {
 Ihap_sa "Katapusan ihap:";
 Ihap_sa barya;
 
+// Output:
+// 2
+// 4
+// 8
+// 16
+// 32
+// Katapusan ihap:
+// 64
+

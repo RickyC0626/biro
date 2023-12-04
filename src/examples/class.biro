@@ -20,9 +20,9 @@ Klase Iring < Mananap {
 
 var iro = Iro();
 iro.sulti(); // woof
-iro.lupad();
+iro.lupad(); // Dili ko makalupad
 
 var iring = Iring();
 iring.sulti(); // meow
-iring.lupad();
+iring.lupad(); // Dili ko makalupad
 

@@ -7,23 +7,22 @@ A Bisaya-flavored language transpiled to C. Biro means joke in Bisaya.
 // Biro-lang
 
 // Hello, World! example
-Mawadwad sa "Hello, World!";
+Mawadwad_sa "Hello, World!";
 
-// Variables and data types
-Barya gikan 5;
-Letra pangalanan "Juan";
-Totoo kamatuoran = Dili;
+// Variables (strings and numbers for now)
+var gikan = 5;
+var pangalanan = "Juan";
 
 // Control structures
 Kon (barya > 10) {
-  Ihap sa "Dako ang barya!";
-} Kun dili {
-  Ihap sa "Gamay lang ang barya.";
+  Ihap_sa "Dako ang barya!";
+} Kun_dili {
+  Ihap_sa "Gamay lang ang barya.";
 }
 
 // Loops
-Para i = 0; i < 5; i++ {
-  Ihap sa "Kumusta ka, Bisaya?";
+Para (var i = 0; i < 5; i = i + 1) {
+  Ihap_sa "Kumusta ka, Bisaya?";
 }
 
 // Functions
@@ -31,11 +30,19 @@ Funksyon kuhaAngKwarta(barya) {
   Balik barya * 2;
 }
 
-// Error handling
-Subukan {
-  KunlaraAngError();
-} Ayaw {
-  Ihap sa "Na-handle ang error.";
+// Classes and inheritance
+Klase Mananap {
+  sulti() {}
+
+  lupad() {
+    Ihap_sa "Dili ko makalupad";
+  }
+}
+
+Klase Iro < Mananap {
+  sulti() {
+    Ihap_sa "woof";
+  }
 }
 ```
 
