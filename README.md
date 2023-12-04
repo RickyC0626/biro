@@ -64,3 +64,24 @@ Klase Iro < Mananap {
 - `Ug` - `and`
 - `Wala` - `nil`
 
+## Installation
+
+Go to `src/` directory:
+```sh
+cd src
+```
+
+Compile using `make`:
+```sh
+make
+```
+
+Run biro in repl mode or from file:
+```sh
+# REPL mode (no args)
+./biro
+
+# Read from file
+./biro examples/function.biro
+```
+
