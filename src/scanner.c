@@ -149,7 +149,7 @@ static TokenType identifierType() {
           case 'a':
             if (scanner.current - scanner.start > 2) {
               switch (scanner.start[2]) {
-                case 'k': return checkKeyword(3, 3, "kak", TOKEN_FALSE);
+                case 'k': return checkKeyword(3, 2, "ak", TOKEN_FALSE);
                 case 'l': return checkKeyword(3, 2, "ik", TOKEN_RETURN);
               }
             }

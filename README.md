@@ -46,3 +46,21 @@ Klase Iro < Mananap {
 }
 ```
 
+## Keywords w/ Equivalent Tokens
+
+- `Bakak` - `false`
+- `Balik` - `return`
+- `Funksyon` - `function`
+- `Ihap_sa` - `print`
+- `Kini` - `this`
+- `Klase` - `class`
+- `Kon` - `if`
+- `Kun_dili` - `else`
+- `Mawadwad_sa` - `print`
+- `O` - `or`
+- `Para` - `for`
+- `Samtang` - `while`
+- `Tinuod` - `true`
+- `Ug` - `and`
+- `Wala` - `nil`
+
