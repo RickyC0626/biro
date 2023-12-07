@@ -1,5 +1,21 @@
-# biro
-A Bisaya-flavored language transpiled to C. Biro means joke in Bisaya.
+<h1 align="center">
+  🇵🇭 Biro
+</h1>
+
+<p align="center">
+  A Bisaya-flavored language transpiled to C. Biro means joke in Bisaya.
+</p>
+
+<h4 align="center">
+  <span>Built with</span>
+  <br><br>
+  <a href="https://shields.io/#gh-light-mode-only">
+    <img alt="Node.js" src="https://img.shields.io/badge/-C-f6f8fa?style=for-the-badge&logo=c">
+  </a>
+  <a href="https://shields.io/#gh-dark-mode-only">
+    <img alt="Node.js" src="https://img.shields.io/badge/-C-161b22?style=for-the-badge&logo=c">
+  </a>
+</h4>
 
 ## Example
 
@@ -85,3 +101,6 @@ Run biro in repl mode or from file:
 ./biro examples/function.biro
 ```
 
+## Resources
+
+- [Crafting Interpreters](https://craftinginterpreters.com)
